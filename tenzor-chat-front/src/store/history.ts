@@ -84,7 +84,7 @@ const createStore: StateCreator<THistory> = (set, get) => ({
 
 export const useHistory = create<THistory>()(
   persist(createStore, {
-    name: "history",
+    name: "demoHistory",
     getStorage: () => ({
       getItem: (key) => Cookies.get(key) || null,
       setItem: (key, value) => {

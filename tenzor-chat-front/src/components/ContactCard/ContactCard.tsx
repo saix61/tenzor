@@ -11,14 +11,14 @@ export const ContactCard = () => {
   const { getDialog } = useHistory();
   const { getUserByID } = useUsers();
   const contactCardID =
-    getDialog(currentDialogID)[0].interlocutors.filter(
+    getDialog(currentDialogID)[0]?.interlocutors.filter(
       (i) => i !== currentUserID
     )[0] ?? currentUserID;
 
   const contactCardInfo = getUserByID(contactCardID);
 
   const handleRemoveCookie = () => {
-    Cookies.remove("history");
+    Cookies.remove("demoHistory");
     Cookies.remove("appUsers");
     Cookies.remove("appStore");
     window.location.reload();
