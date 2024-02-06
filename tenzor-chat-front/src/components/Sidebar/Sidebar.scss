@@ -1,0 +1,14 @@
+@import '../../assets/styles/variables.scss';
+
+.Sidebar {
+    border-right: 1px solid $border;
+
+    &-Head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        height: 40px;
+        border-bottom: 1px solid $border;
+    }
+}

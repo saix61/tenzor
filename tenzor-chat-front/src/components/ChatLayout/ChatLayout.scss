@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables.scss';
+
+.ChatLayout {
+    display: flex;
+
+    @media (max-width: 1024px) {
+        flex-direction: column-reverse;
+    }
+
+    .ChatBody {
+        flex: 75%;
+
+        @media (max-width: 1024px) {
+            flex: 1;
+            max-height: calc(100% - 40px);
+        }
+    }
+
+    .ContactCard {
+        flex: 25%;
+        border-left: 1px solid $border;
+
+        @media (max-width: 1024px) {
+            flex: none;
+            border-left: 0;
+            text-align: left;
+            border-bottom: 1px solid $border;
+        }
+    }
+}

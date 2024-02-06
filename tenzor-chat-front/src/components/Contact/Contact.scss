@@ -1,0 +1,78 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/styles/mixins.scss';
+
+.Contact {
+    display: flex;
+    padding: 8px 12px;
+    border-bottom: 1px solid $border;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        background: $bg-primary-op;
+        transition: 0.35s ease-in;
+    }
+
+    &.active,
+    &:hover {
+        &:before {
+            width: 100%;
+            transition: 0.15s;
+        }
+    }
+
+    &-Photo {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 40px;
+            width: 40px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 100%;
+            border: 1px solid $border;
+        }
+    }
+
+    &-Content {
+        padding: 3px 12px;
+        flex: 1;
+    }
+
+    &-Name {
+        font-size: 15px;
+        font-weight: bold;
+        @include line-clamp(17px);
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+    }
+
+    &-LastMessage {
+        font-size: 12px;
+        @include line-clamp(14px);
+
+        span {
+            color: $primary;
+        }
+    }
+
+    &-LastMessageDate {
+        color: $border;
+        font-size: 12px;
+        white-space: nowrap;
+        padding: 3px 0;
+        display: flex;
+        align-items: flex-end;
+    }
+}

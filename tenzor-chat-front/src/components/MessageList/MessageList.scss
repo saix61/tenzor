@@ -1,0 +1,7 @@
+@import '../../assets/styles/variables.scss';
+
+.MessageList {
+    background: $bg-light;
+    padding: 12px;
+    overflow: auto;
+}

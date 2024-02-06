@@ -1,0 +1,9 @@
+@mixin line-clamp($h) {
+    white-space: nowrap;
+    width: 0;
+    min-width: 100%;
+    text-overflow: ellipsis;
+    max-height: $h;
+    line-height: $h;
+    overflow: hidden;
+}

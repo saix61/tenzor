@@ -1,0 +1,24 @@
+@import '../../assets/styles/variables.scss';
+
+.ChatWrapper {
+    display: flex;
+    height: 100vh;
+
+    .Sidebar {
+        flex: 20%;
+        max-width: 20%;
+
+        @media (max-width: 1024px) {
+            flex: 40%;
+            max-width: 40%;
+        }
+    }
+
+    .ChatLayout {
+        flex: 80%;
+
+        @media (max-width: 1024px) {
+            flex: 60%;
+        }
+    }
+}

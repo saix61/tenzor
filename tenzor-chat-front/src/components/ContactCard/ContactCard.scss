@@ -1,0 +1,51 @@
+@import '../../assets/styles/variables.scss';
+
+.ContactCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+
+    @media (max-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        height: 40px;
+    }
+
+    &-PersonalInfo {
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 1024px) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &-Photo {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 100%;
+
+        @media (max-width: 1024px) {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &-Name {
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+
+    &-ActionList {
+        display: flex;
+        justify-content: center;
+        margin-top: 4px;
+    }
+}

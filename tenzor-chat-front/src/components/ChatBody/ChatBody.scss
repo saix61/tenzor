@@ -1,0 +1,10 @@
+@import '../../assets/styles/variables.scss';
+
+.ChatBody {
+    display: flex;
+    flex-direction: column;
+
+    .MessageList {
+        flex: 1;
+    }
+}
