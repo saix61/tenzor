@@ -41,11 +41,24 @@
         font-size: 15px;
         font-weight: bold;
         margin-top: 12px;
+
+        @media (max-width: 1024px) {
+            margin-top: 0;
+            margin-Left: 12px;
+        }
     }
 
     &-ActionList {
         display: flex;
         justify-content: center;
         margin-top: 4px;
+
+        @media (max-width: 1024px) {
+            margin-top: 0;
+
+            button {
+                font-size: 12px;
+            }
+        }
     }
 }

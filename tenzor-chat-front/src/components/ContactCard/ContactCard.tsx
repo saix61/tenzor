@@ -40,7 +40,11 @@ export const ContactCard = () => {
 
       <div className="ContactCard-ActionList">
         {contactCardID === currentUserID ? (
-          <Button variant={"contained"} onClick={handleRemoveCookie}>
+          <Button
+            size={"small"}
+            variant={"contained"}
+            onClick={handleRemoveCookie}
+          >
             Clean cookie&nbsp;
             <Cookie fontSize={"small"} />
           </Button>
