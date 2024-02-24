@@ -1,4 +1,4 @@
-# Tenzor Chat Front
+#### Tenzor Chat Front
 
 ## Ссылка на набросок архитектуры проекта в виде схемы
 
@@ -13,7 +13,7 @@
 5. Проект запуститься по адресу `http://localhost:5173/`.
 6. Чтобы сбросить cookie проекта, вам нужно добавить чат с пользователем "Jhon" (это текущий пользователь по умолчанию) и нажать на `CLEAN COOKIE`.
 
-## Используемые технологии
+# Используемые технологии
 
 - React
 - TypeScript
@@ -28,6 +28,8 @@
 - CSS
 - JavaScript
 
-# Tenzor Chat Server (WebSocket)
+---
+
+#### Tenzor Chat Server (WebSocket)
 
 ...ToDo
