@@ -28,6 +28,8 @@
 - CSS
 - JavaScript
 
+![image](https://github.com/saix61/websocket-chat/assets/27074031/283e96c4-3f25-4a97-9cd0-342725f5b401)
+
 ---
 
 #### Tenzor Chat Server (WebSocket)
